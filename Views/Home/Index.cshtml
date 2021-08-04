@@ -1,0 +1,55 @@
+﻿@model IEnumerable<PizzaShop.Models.Pizza>
+
+@{
+    ViewData["Title"] = "Home Page";
+    
+}
+
+<head>
+    <link rel="stylesheet" type="text/css" href="~/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="~/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="~/css/site.css" />
+</head>
+
+<body>
+<h1>Pizza</h1>
+
+<form asp-controller="Home" asp-action="Index">
+    <p>
+        Title: <input type="text" name="SearchString" />
+        <input type="submit" value="Filter" />
+    </p>
+</form>
+
+<div class="catalog">
+
+    @foreach (var item in Model)
+    {
+        <div class="catalog_item">
+            <div class="product">
+                <img class="product_image" src="data:image/jpg;base64,@(Convert.ToBase64String(item.Image))"/>
+                <div class="product_content">
+                    <h3 class="product_name">@item.Name</h3>
+                    <p class="product_recipe">@item.Recipe</p>
+                </div>
+            </div>
+            <footer class="product_footer">
+                <div class="product_sizes">
+                    <button class="product_size" type="button">25см </button>
+                    <button class="product_size" type="button">30см</button>
+                    <button class="product_size" type="button">35см</button>
+                </div>
+                <div class="product_bottom">
+                    <div class="product_price">
+                        <span class="product_price-value">@item.Price</span>
+                        <span class="product_currency">руб</span>
+                    </div>
+                    <button class="btn product_button" type="button">В корзину</button>
+                </div>
+
+            </footer>
+        </div>
+    }
+</div>
+</body>
+
