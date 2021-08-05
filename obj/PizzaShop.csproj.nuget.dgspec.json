@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Source\\Repos\\12312\\PizzaShop.csproj": {}
+    "C:\\Users\\Admin\\Source\\Repos\\Pizza123123123123\\PizzaShop.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Source\\Repos\\12312\\PizzaShop.csproj": {
+    "C:\\Users\\Admin\\Source\\Repos\\Pizza123123123123\\PizzaShop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Source\\Repos\\12312\\PizzaShop.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Source\\Repos\\Pizza123123123123\\PizzaShop.csproj",
         "projectName": "PizzaShop",
-        "projectPath": "C:\\Users\\Admin\\Source\\Repos\\12312\\PizzaShop.csproj",
+        "projectPath": "C:\\Users\\Admin\\Source\\Repos\\Pizza123123123123\\PizzaShop.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Source\\Repos\\12312\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Source\\Repos\\Pizza123123123123\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
