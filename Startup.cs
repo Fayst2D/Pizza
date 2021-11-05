@@ -14,6 +14,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using PizzaShop.Data;
 using PizzaShop.Models;
+using PizzaShop.Services;
+using PizzaShop.Services.Implemintations;
 
 namespace PizzaShop
 {
@@ -36,6 +38,8 @@ namespace PizzaShop
 
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+
+            services.AddTransient<ICartService,CartService>();
 
 
             services.AddControllersWithViews();
