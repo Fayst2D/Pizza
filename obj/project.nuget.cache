@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uLRwV1AvGWSJkyOtNu5U07xAuLP1dDgKE4lx2GuknXBGbjreaSoVFK8G6BwQiJxLw6bDmjMZSiq8Bi9yadP04Q==",
+  "dgSpecHash": "17RkCcArNKSbn+UcT1/LzokuztRo067c2vCbYu8XMbo4IRUMTw5y4A89hKFSnJ1ioZxw8lm0KBXAzgG9XLf0XQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\Source\\Repos\\PizzaShop\\PizzaShop.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\Source\\Repos\\PizzaShop\\PizzaShop.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.8\\microsoft.aspnetcore.cryptography.internal.5.0.8.nupkg.sha512",

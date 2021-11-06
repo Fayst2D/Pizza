@@ -39,7 +39,16 @@ namespace PizzaShop
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
-            services.AddTransient<ICartService,CartService>();
+            services.AddDistributedMemoryCache();
+
+            services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromSeconds(10);
+                options.Cookie.HttpOnly = true;
+                options.Cookie.IsEssential = true;
+            });
+
+            services.AddTransient<ICartService, CartService>();
 
 
             services.AddControllersWithViews();
@@ -59,6 +68,9 @@ namespace PizzaShop
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+
+            
+
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
@@ -66,6 +78,8 @@ namespace PizzaShop
 
             app.UseAuthentication();
             app.UseAuthorization();
+
+            app.UseSession();
 
             app.UseEndpoints(endpoints =>
             {

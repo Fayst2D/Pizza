@@ -7799,9 +7799,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Source\\Repos\\PizzaShop\\PizzaShop.csproj",
-      "projectName": "PizzaShop",
-      "projectPath": "C:\\Users\\Admin\\Source\\Repos\\PizzaShop\\PizzaShop.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Source\\Repos\\PizzaShop\\PizzaShop.Web.csproj",
+      "projectName": "PizzaShop.Web",
+      "projectPath": "C:\\Users\\Admin\\Source\\Repos\\PizzaShop\\PizzaShop.Web.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Admin\\Source\\Repos\\PizzaShop\\obj\\",
       "projectStyle": "PackageReference",
@@ -7881,7 +7881,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-preview.7.21379.14\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.2.21505.57\\RuntimeIdentifierGraph.json"
       }
     }
   }

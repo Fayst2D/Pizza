@@ -12,19 +12,10 @@ namespace PizzaShop.Services.Implemintations
 {
     public class CartService : ICartService
     {
-        private readonly ApplicationDbContext dbContext;
         private const string key = "cart";
 
-        public CartService(ApplicationDbContext context)
-        {
-                dbContext = context;
-        }
-
-
-        public async Task AddToCartAsync(int id, ISession session)
-        {
-            var pizza = await dbContext.Pizzas.FirstOrDefaultAsync(p => p.Id == id);
-
+        public async Task AddToCartAsync(Models.Pizza pizza, ISession session)
+        {           
             var cart = session.Get<List<CartItem>>(key);
 
             if (cart == null)
@@ -35,7 +26,7 @@ namespace PizzaShop.Services.Implemintations
             }  
             else
             {  
-                int index = GetItemIndex(id, session);
+                int index = GetItemIndex(pizza.Id, session);
                 
                 if(index == -1)
                 {
@@ -83,11 +74,11 @@ namespace PizzaShop.Services.Implemintations
             return new() { Cart = cart, Sum = sum };
         }
 
-        public async Task RemoveAsync(int id, ISession session)
+        public async Task RemoveAsync(Models.Pizza pizza, ISession session)
         {
             var cart = session.Get<List<CartItem>>(key);
                          
-            int index = GetItemIndex(id, session);
+            int index = GetItemIndex(pizza.Id, session);
                   
             if(cart[index].Quantity > 1)
             {
