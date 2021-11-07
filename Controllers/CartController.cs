@@ -28,7 +28,7 @@ namespace PizzaShop.Controllers
 
             await cartService.AddToCartAsync(pizza,HttpContext.Session);
 
-            return RedirectToAction("Index","Home");
+            return RedirectToAction("Index");
         }
 
         public async Task<IActionResult> Remove(int id)

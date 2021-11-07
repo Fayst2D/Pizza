@@ -44,12 +44,15 @@ namespace PizzaShop.Services.Implemintations
         {
             var cart = session.Get<List<CartItem>>(key);
 
+            int index = 0;
+
             foreach(var item in cart)
             {
                 if(item.Pizza.Id == id)
                 {
-                    return item.Pizza.Id;
+                    return index;
                 }
+                index++;
             }
 
             return -1;
@@ -65,12 +68,14 @@ namespace PizzaShop.Services.Implemintations
             var cart = session.Get<List<CartItem>>(key);
 
             int sum = 0;
-
-            foreach(var item in cart)
+            if(cart != null)
             {
-                sum += item.Quantity*item.Pizza.Price;
+                foreach (var item in cart)
+                {
+                    sum += item.Quantity * item.Pizza.Price;
+                }
             }
-
+           
             return new() { Cart = cart, Sum = sum };
         }
 
