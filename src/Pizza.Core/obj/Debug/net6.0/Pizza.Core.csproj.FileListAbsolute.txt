@@ -10,3 +10,15 @@ C:\Users\Admin\RiderProjects\PizzaShop\src\Pizza.Core\obj\Debug\net6.0\Pizza.Cor
 C:\Users\Admin\RiderProjects\PizzaShop\src\Pizza.Core\obj\Debug\net6.0\Pizza.Core.dll
 C:\Users\Admin\RiderProjects\PizzaShop\src\Pizza.Core\obj\Debug\net6.0\ref\Pizza.Core.dll
 C:\Users\Admin\RiderProjects\PizzaShop\src\Pizza.Core\obj\Debug\net6.0\Pizza.Core.pdb
+D:\projects\PizzaShop\src\Pizza.Core\bin\Debug\net6.0\Pizza.Core.deps.json
+D:\projects\PizzaShop\src\Pizza.Core\bin\Debug\net6.0\Pizza.Core.dll
+D:\projects\PizzaShop\src\Pizza.Core\bin\Debug\net6.0\ref\Pizza.Core.dll
+D:\projects\PizzaShop\src\Pizza.Core\bin\Debug\net6.0\Pizza.Core.pdb
+D:\projects\PizzaShop\src\Pizza.Core\obj\Debug\net6.0\Pizza.Core.csproj.AssemblyReference.cache
+D:\projects\PizzaShop\src\Pizza.Core\obj\Debug\net6.0\Pizza.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\projects\PizzaShop\src\Pizza.Core\obj\Debug\net6.0\Pizza.Core.AssemblyInfoInputs.cache
+D:\projects\PizzaShop\src\Pizza.Core\obj\Debug\net6.0\Pizza.Core.AssemblyInfo.cs
+D:\projects\PizzaShop\src\Pizza.Core\obj\Debug\net6.0\Pizza.Core.csproj.CoreCompileInputs.cache
+D:\projects\PizzaShop\src\Pizza.Core\obj\Debug\net6.0\Pizza.Core.dll
+D:\projects\PizzaShop\src\Pizza.Core\obj\Debug\net6.0\ref\Pizza.Core.dll
+D:\projects\PizzaShop\src\Pizza.Core\obj\Debug\net6.0\Pizza.Core.pdb

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jxn0k4VPncDwoCsaa59cJlO9AjW9aNaQqjsdcUcSx/4zY9hsK1XiULJAHDZz4MudF/OG2DN0o89qUZRpVY/otw==",
+  "dgSpecHash": "cT5TY31HUnnf1wvdj8Yzn7BVJUYg2Gx/VGrDaAT4bB6gpsuFZk89wfV5QY4PnA/DDwef9MDC8gJE6CQ7sXVEvA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\RiderProjects\\PizzaShop\\src\\Pizza.Web\\Pizza.Web.csproj",
+  "projectFilePath": "D:\\projects\\PizzaShop\\src\\Pizza.Web\\Pizza.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.0\\microsoft.aspnetcore.cryptography.internal.6.0.0.nupkg.sha512",

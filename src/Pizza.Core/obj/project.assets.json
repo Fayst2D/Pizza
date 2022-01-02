@@ -550,11 +550,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\RiderProjects\\PizzaShop\\src\\Pizza.Core\\Pizza.Core.csproj",
+      "projectUniqueName": "D:\\projects\\PizzaShop\\src\\Pizza.Core\\Pizza.Core.csproj",
       "projectName": "Pizza.Core",
-      "projectPath": "C:\\Users\\Admin\\RiderProjects\\PizzaShop\\src\\Pizza.Core\\Pizza.Core.csproj",
+      "projectPath": "D:\\projects\\PizzaShop\\src\\Pizza.Core\\Pizza.Core.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\RiderProjects\\PizzaShop\\src\\Pizza.Core\\obj\\",
+      "outputPath": "D:\\projects\\PizzaShop\\src\\Pizza.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -611,7 +611,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

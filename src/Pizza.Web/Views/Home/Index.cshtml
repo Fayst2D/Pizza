@@ -1,33 +1,56 @@
 ﻿@model IEnumerable<Pizza.Core.Entities.Pizza>
 
+
+
+
 @{
     ViewData["Title"] = "Home Page";
     
 }
 
+
+
+
+
+
 <head>
-    <link rel="stylesheet" type="text/css" href="~/css/main.css" />
-    <link rel="stylesheet" type="text/css" href="~/css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="~/css/site.css" />
+    <link rel="stylesheet" type="text/css" href="~/css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="~/css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="~/css/site.css"/>
 </head>
 
+
+
+
 <body>
-<h1>Pizza</h1>
 
-<form asp-controller="Home" asp-action="Index">
-    <p>
-        Title: <input type="text" name="SearchString" />
-        <input type="submit" value="Filter" />
-    </p>
-</form>
 
-<div class="catalog">
 
+
+<section class="section-top">
+     <div class="section-top_container">
+        <p class="section-top_info">от белорусского повара</p>
+        <h1 class="section-top_title">Лучшая пицца в Лепеле</h1>
+     </div>
+</section>
+
+
+
+<div class="container">
+
+    <form asp-controller="Home" asp-action="Index">
+        <p>
+         Title: <input type="text" name="SearchString"/>
+         <input type="submit" value="Filter"/>
+        </p>
+    </form>
+
+    <div class="catalog">
     @foreach (var item in Model)
     {
         <div class="catalog_item">
             <div class="product">
-                <img class="product_image" src="data:image/jpg;base64,@(Convert.ToBase64String(item.Image))"/>
+                <img class="product_image" width="420" height="420" src="data:image/jpg;base64,@(Convert.ToBase64String(item.Image))"/>
                 <div class="product_content">
                     <h3 class="product_name">@item.Name</h3>
                     <p class="product_recipe">@item.Recipe</p>
@@ -45,6 +68,10 @@
             </footer>
         </div>
     }
+    </div>
 </div>
+
+
+
 </body>
 

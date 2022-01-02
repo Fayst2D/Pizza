@@ -1074,11 +1074,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\RiderProjects\\PizzaShop\\src\\Pizza.Data\\Pizza.Data.csproj",
+      "projectUniqueName": "D:\\projects\\PizzaShop\\src\\Pizza.Data\\Pizza.Data.csproj",
       "projectName": "Pizza.Data",
-      "projectPath": "C:\\Users\\Admin\\RiderProjects\\PizzaShop\\src\\Pizza.Data\\Pizza.Data.csproj",
+      "projectPath": "D:\\projects\\PizzaShop\\src\\Pizza.Data\\Pizza.Data.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\RiderProjects\\PizzaShop\\src\\Pizza.Data\\obj\\",
+      "outputPath": "D:\\projects\\PizzaShop\\src\\Pizza.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1095,8 +1095,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Admin\\RiderProjects\\PizzaShop\\src\\Pizza.Core\\Pizza.Core.csproj": {
-              "projectPath": "C:\\Users\\Admin\\RiderProjects\\PizzaShop\\src\\Pizza.Core\\Pizza.Core.csproj"
+            "D:\\projects\\PizzaShop\\src\\Pizza.Core\\Pizza.Core.csproj": {
+              "projectPath": "D:\\projects\\PizzaShop\\src\\Pizza.Core\\Pizza.Core.csproj"
             }
           }
         }
@@ -1131,7 +1131,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
