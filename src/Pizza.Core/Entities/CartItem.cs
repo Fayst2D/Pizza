@@ -11,5 +11,9 @@
             Pizza = pizza;
             Quantity = quantity;
         }
+        public CartItem()
+        {
+
+        }
     }
 }

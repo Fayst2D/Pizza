@@ -50,7 +50,7 @@
     {
         <div class="catalog_item">
             <div class="product">
-                <img class="product_image" width="420" height="420" src="data:image/jpg;base64,@(Convert.ToBase64String(item.Image))"/>
+                <img class="product_image" width="400" height="40пека0" src="data:image/jpg;base64,@(Convert.ToBase64String(item.Image))"/>
                 <div class="product_content">
                     <h3 class="product_name">@item.Name</h3>
                     <p class="product_recipe">@item.Recipe</p>
@@ -61,8 +61,12 @@
                     <div class="product_price">
                         <span class="product_price-value">@item.Price</span>
                         <span class="product_currency">руб</span>
-                    </div>
-                    <a asp-controller="Cart" asp-action="Add" asp-route-id=@item.Id>В корзину</a>
+                    </div>        
+                    <form asp-controller="Cart" asp-action="Add" asp-route-id=@item.Id>
+                        <button class="product_button">
+                            <span class="button_text">В корзину</span>
+                        </button>
+                    </form>                    
                 </div>
 
             </footer>

@@ -13,6 +13,9 @@
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
         "outputPath": "D:\\projects\\PizzaShop\\src\\Pizza.Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -81,6 +84,9 @@
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
         "outputPath": "D:\\projects\\PizzaShop\\src\\Pizza.Data\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -115,6 +121,20 @@
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.NETCore.App": {
+              "target": "Package",
+              "version": "[2.2.8, )"
             }
           },
           "imports": [
@@ -145,6 +165,9 @@
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
         "outputPath": "D:\\projects\\PizzaShop\\src\\Pizza.Web\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -188,13 +211,23 @@
               "target": "Package",
               "version": "[6.0.0, )"
             },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[6.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.0, )"
+              "version": "[6.0.2, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.2, )"
             }
           },
           "imports": [

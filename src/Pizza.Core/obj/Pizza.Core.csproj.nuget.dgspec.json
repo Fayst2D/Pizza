@@ -13,6 +13,9 @@
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
         "outputPath": "D:\\projects\\PizzaShop\\src\\Pizza.Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"

@@ -21,12 +21,7 @@ namespace Pizza.Web.Controllers
         {
             var cart = _cartService.GetItems(HttpContext.Session);
 
-            int sum = 0;
-            
-            foreach (var item in cart)
-            {
-                sum += item.Quantity * item.Pizza.Price;
-            }
+            int sum = _cartService.GetTotalPrice(HttpContext.Session);
             
             return View(new CartViewModel{
                 Sum = sum,
@@ -40,7 +35,7 @@ namespace Pizza.Web.Controllers
 
             await _cartService.AddToCartAsync(pizza,HttpContext.Session);
 
-            return RedirectToAction("Index");
+            return RedirectToAction("Index","Home");
         }
 
         public async Task<IActionResult> Remove(int id)
@@ -51,7 +46,6 @@ namespace Pizza.Web.Controllers
 
             return RedirectToAction("Index");
         }
-
 
     }
 }
