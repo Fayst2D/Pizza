@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Pizza.Data.Data;
 using PizzaShop.ViewModels;
@@ -7,6 +8,7 @@ using PizzaShop.ViewModels;
 
 namespace Pizza.Web.Controllers
 {
+    [Authorize(Policy = "AdminOnly")]
     public class PizzasController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -23,7 +25,7 @@ namespace Pizza.Web.Controllers
         }
 
         // GET: Pizzas/Details/5
-        public async Task<IActionResult> Details(int? id)
+        public async Task<IActionResult> Details(int? id) 
         {
             if (id == null)
             {
@@ -61,7 +63,7 @@ namespace Pizza.Web.Controllers
             
             if (ModelState.IsValid && pizzaVm.Image != null)
             {
-                byte[] imageBytes = null;
+                byte[] imageBytes;
                 using (var binaryReader = new BinaryReader(pizzaVm.Image.OpenReadStream()))
                 {
                     imageBytes = binaryReader.ReadBytes((int) pizzaVm.Image.Length);

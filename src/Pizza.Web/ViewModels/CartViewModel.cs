@@ -6,6 +6,6 @@ namespace Pizza.Web.ViewModels
     {
         public List<CartItem> Cart { get; set; }
 
-        public int Sum { get; set; }
+        public decimal Sum { get; set; }
     }
 }

@@ -27,9 +27,13 @@ namespace Pizza.Web.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Index(OrderViewModel orderVm)
         {
+            if (_cartService.GetItems(HttpContext.Session) == null)
+            {
+                return RedirectToAction("Index","Home");
+            }
 
 
-            Order order = new Order
+                Order order = new Order
             {
                 OrderDate = DateTime.Now,
                 Address = orderVm.Address,
@@ -38,17 +42,18 @@ namespace Pizza.Web.Controllers
                 Phone = orderVm.Phone,
             };
 
-            _cartService.CreateOrder(order,HttpContext.Session);
+            if (ModelState.IsValid)
+            {               
+                
+                _cartService.CreateOrder(order,HttpContext.Session);
 
-            if(ModelState.IsValid)
-            {
                 _dbContext.Orders.Add(order);
                 await _dbContext.SaveChangesAsync();
                 return RedirectToAction("Index","Home");
             }
             
 
-            return View(order);
+            return View(orderVm);
         }
     }
 }

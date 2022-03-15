@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "565NkMOAAB1bcw0MdRjOEuXZPW0oTHEc1kcXRpjhYGa2dVqnzJe6ibWoiorTPWsCAolP7vhKciZOzek9rIEMlw==",
+  "dgSpecHash": "T4YU6z9wPGkpZaGfPxA/MUfVxbOsDI37IA56klPvIVAbK79BSBUZpJTc2wzXSxu/E3NC0/NnSnfrq1btB80LOA==",
   "success": true,
   "projectFilePath": "D:\\projects\\PizzaShop\\src\\Pizza.Web\\Pizza.Web.csproj",
   "expectedPackageFiles": [
@@ -82,6 +82,7 @@
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.dotnethostresolver\\2.2.8\\microsoft.netcore.dotnethostresolver.2.2.8.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.targets\\2.0.0\\microsoft.netcore.targets.2.0.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.14.0\\microsoft.visualstudio.azure.containers.tools.targets.1.14.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.visualstudio.debugger.contracts\\17.2.0\\microsoft.visualstudio.debugger.contracts.17.2.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration\\6.0.2\\microsoft.visualstudio.web.codegeneration.6.0.2.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.core\\6.0.2\\microsoft.visualstudio.web.codegeneration.core.6.0.2.nupkg.sha512",

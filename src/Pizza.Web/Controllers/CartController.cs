@@ -21,8 +21,13 @@ namespace Pizza.Web.Controllers
         {
             var cart = _cartService.GetItems(HttpContext.Session);
 
-            int sum = _cartService.GetTotalPrice(HttpContext.Session);
-            
+
+            decimal sum = 0;
+            if (cart != null)
+            {
+               sum = _cartService.GetTotalPrice(HttpContext.Session);
+            }
+
             return View(new CartViewModel{
                 Sum = sum,
                 Cart = cart
@@ -33,7 +38,12 @@ namespace Pizza.Web.Controllers
         {
             var pizza = await _dbContext.Pizzas.FirstOrDefaultAsync(p => p.Id == id);
 
-            await _cartService.AddToCartAsync(pizza,HttpContext.Session);
+            if (pizza == null)
+            {
+                return NotFound();
+            }
+
+            _cartService.AddToCart(pizza,HttpContext.Session);
 
             return RedirectToAction("Index","Home");
         }
@@ -42,7 +52,11 @@ namespace Pizza.Web.Controllers
         {
             var pizza = await _dbContext.Pizzas.FirstOrDefaultAsync(p => p.Id == id);
 
-            await _cartService.RemoveAsync(pizza, HttpContext.Session);
+            if(pizza == null)
+            {
+                return NotFound();
+            }
+            _cartService.Remove(pizza, HttpContext.Session);
 
             return RedirectToAction("Index");
         }

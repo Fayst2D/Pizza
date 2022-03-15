@@ -14,7 +14,7 @@ namespace PizzaShop.Services.Implemintations
     {
         private const string Key = "cart";
 
-        public async Task AddToCartAsync(Pizza.Core.Entities.Pizza pizza, ISession session)
+        public void AddToCart(Pizza.Core.Entities.Pizza pizza, ISession session)
         {           
             var cart = session.Get<List<CartItem>>(Key);
 
@@ -63,7 +63,7 @@ namespace PizzaShop.Services.Implemintations
             session.Set(Key, null);
         }
 
-        public async Task RemoveAsync(Pizza.Core.Entities.Pizza pizza, ISession session)
+        public void Remove(Pizza.Core.Entities.Pizza pizza, ISession session)
         {
             var cart = session.Get<List<CartItem>>(Key);
                          
@@ -86,11 +86,11 @@ namespace PizzaShop.Services.Implemintations
             return session.Get<List<CartItem>>(Key);
         }
 
-        public int GetTotalPrice(ISession session)
+        public decimal GetTotalPrice(ISession session)
         {
             var cart = GetItems(session);
 
-            int sum = 0;
+            decimal sum = 0;
 
             foreach(var item in cart)
             {

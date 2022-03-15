@@ -21,7 +21,7 @@ namespace Pizza.Core.Entities
 
         public List<OrderDetail> OrderDetails { get; set; }
 
-        public int Total { get; set; }
+        public decimal Total { get; set; }
 
         public DateTime OrderDate { get; set; }
     }

@@ -20,7 +20,7 @@ namespace PizzaShop.ViewModels
 
         [DataType(DataType.Currency)]
         [Required]
-        public int Price { get; set; }
+        public decimal Price { get; set; }
 
         [Required]
         public string Recipe { get; set; }

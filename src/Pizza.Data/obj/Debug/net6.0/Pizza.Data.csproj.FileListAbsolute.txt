@@ -16,7 +16,6 @@ C:\Users\Admin\RiderProjects\PizzaShop\src\Pizza.Data\bin\Debug\net6.0\Pizza.Cor
 C:\Users\Admin\RiderProjects\PizzaShop\src\Pizza.Data\obj\Debug\net6.0\Pizza.Data.csproj.CopyComplete
 D:\projects\PizzaShop\src\Pizza.Data\bin\Debug\net6.0\Pizza.Data.deps.json
 D:\projects\PizzaShop\src\Pizza.Data\bin\Debug\net6.0\Pizza.Data.dll
-D:\projects\PizzaShop\src\Pizza.Data\bin\Debug\net6.0\ref\Pizza.Data.dll
 D:\projects\PizzaShop\src\Pizza.Data\bin\Debug\net6.0\Pizza.Data.pdb
 D:\projects\PizzaShop\src\Pizza.Data\bin\Debug\net6.0\Pizza.Core.dll
 D:\projects\PizzaShop\src\Pizza.Data\bin\Debug\net6.0\Pizza.Core.pdb
@@ -31,3 +30,4 @@ D:\projects\PizzaShop\src\Pizza.Data\obj\Debug\net6.0\ref\Pizza.Data.dll
 D:\projects\PizzaShop\src\Pizza.Data\obj\Debug\net6.0\Pizza.Data.pdb
 D:\projects\PizzaShop\src\Pizza.Data\bin\Debug\net6.0\Pizza.Data.runtimeconfig.json
 D:\projects\PizzaShop\src\Pizza.Data\obj\Debug\net6.0\Pizza.Data.genruntimeconfig.cache
+D:\projects\PizzaShop\src\Pizza.Data\obj\Debug\net6.0\refint\Pizza.Data.dll
