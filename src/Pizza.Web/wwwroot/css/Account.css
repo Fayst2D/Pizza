@@ -1,0 +1,56 @@
+﻿body {
+    font-size: 40px;
+    width: 100%;
+    height: 100%;
+    background-color: #f8f8f8;
+}
+
+.container {
+    background-color: #f8f8f8;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.head-text {
+    text-align: center;
+    background-color: #4ea4dc;
+    color: white;
+    margin: 0;
+}
+
+/*login*/
+.login-form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.login-content {
+    margin-top: 0.3rem;
+    background-color: #fff;
+    border-radius: 0.04rem;
+    overflow: hidden;
+}
+/*login*/
+
+/*register*/
+.register-form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.register-content {
+    margin-top: 0.3rem;
+    background-color: #fff;
+    border-radius: 0.04rem;
+    overflow: hidden;
+}
+
+/*register*/
+
+
